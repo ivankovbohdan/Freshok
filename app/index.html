@@ -230,8 +230,8 @@
           <button class="header__form-btn" type="submit">поиск</button>
         </form>
 
-        <ul class="user-nav">
-          <li class="user-nav__item user-nav__item--search">
+        <ul class="header__nav">
+          <li class="header__nav-item header__nav-item--search">
             <button class="search-btn" type="button">
               <span class="sr-only">Открыть поле поиска товаров</span>
               <svg class="search-btn__icon" width="24" height="24">
@@ -239,7 +239,7 @@
               </svg>
             </button>
           </li>
-          <li class="user-nav__item user-nav__item--user">
+          <li class="header__nav-item header__nav-item--user">
             <button class="user-btn user-btn--base" type="button">
               <span class="sr-only">Открыть личный кабинет</span>
               <svg class="user-btn__icon" width="25" height="32">
@@ -247,23 +247,23 @@
               </svg>
             </button>
           </li>
-          <li class="user-nav__item">
+          <li class="header__nav-item">
             <button class="fav-btn fav-btn--big" type="button">
               <span class="sr-only">Открыть избранное</span>
               <svg class="fav-btn__icon" width="32" height="32">
                 <use xlink:href="images/sprite.svg#icon-heart"></use>
               </svg>
             </button>
-            <span class="user-nav__num">12</span>
+            <span class="header__nav-num">12</span>
           </li>
-          <li class="user-nav__item">
+          <li class="header__nav-item">
             <button class="basket-btn basket-btn--big" type="button">
               <span class="sr-only">Открыть корзину</span>
               <svg class="basket-btn__icon" width="32" height="31">
                 <use xlink:href="images/sprite.svg#icon-basket"></use>
               </svg>
             </button>
-            <span class="user-nav__num">12</span>
+            <span class="header__nav-num">12</span>
           </li>
         </ul>
 
@@ -420,11 +420,9 @@
     <div class="side-menu">
 
       <div class="side-menu__top">
-
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo--green.svg" alt="Логотип" width="200" height="60">
         </a>
-
         <button class="side-menu__close-btn close-btn" type="button">
           <svg class="close-btn__icon" width="24" height="24">
             <use xlink:href="images/sprite.svg#icon-close"></use>
@@ -433,10 +431,10 @@
 
       </div>
 
-      <ul class="side-menu__user-block user-block">
+      <div class="side-menu__user-block user-block">
         <button class="user-block__btn">Вход</button>
         <button class="user-block__btn">Регистрация</button>
-      </ul>
+      </div>
 
       <div class="catalog">
 
@@ -572,13 +570,13 @@
       </div>
 
       <address class="side-menu__contacts">
-        <a class="side-menu__contacts-item" href="tel:+380501112233">
+        <a class="side-menu__contacts-link" href="tel:+380501112233">
           <svg class="side-menu__contacts-icon" width="24" height="24">
             <use xlink:href="images/sprite.svg#icon-tel"></use>
           </svg>
           +38 050 111 22 33
         </a>
-        <a class="side-menu__contacts-item" href="#">
+        <a class="side-menu__contacts-link" href="#">
           <svg class="side-menu__contacts-icon" width="24" height="32">
             <use xlink:href="images/sprite.svg#icon-location"></use>
           </svg>

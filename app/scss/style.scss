@@ -3,14 +3,9 @@
 @import 'vars';
 @import 'libs';
 @import 'global';
-@import 'components/header';
-
-@import 'components/btns';
-@import 'components/basket';
-@import 'components/product-card';
-@import 'components/socials';
 
 
+@import 'components/sections/header';
 @import 'components/sections/hero';
 @import 'components/sections/best-products';
 @import 'components/sections/advantages';
@@ -20,5 +15,17 @@
 @import 'components/sections/news';
 @import 'components/sections/catalog';
 @import 'components/sections/product';
+@import 'components/sections/interesting';
+@import 'components/sections/footer';
 
-@import 'components/footer';
+
+@import 'components/blocks/basket';
+@import 'components/blocks/product-card';
+@import 'components/blocks/badges';
+@import 'components/blocks/side-menu';
+@import 'components/blocks/products-nav';
+@import 'components/blocks/socials';
+@import 'components/blocks/news-card';
+
+@import 'components/buttons/close-btn';
+@import 'components/buttons/nav-btns';

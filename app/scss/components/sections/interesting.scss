@@ -1,0 +1,83 @@
+.interesting {
+
+  &__title {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $black;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+
+  &__inner {
+    margin: 0px -15px 45px;
+  }
+
+  &__item {
+    padding: 0 15px;
+  }
+
+  .slick-list {}
+
+  &__inner-slick-prev,
+  &__inner-slick-next {
+    border: 1px solid $silver-600;
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: -108px;
+    @extend %arrow-interactivity;
+  }
+
+  &-prev-img path,
+  &-product-next-img path {
+    transition: fill 0.5s;
+  }
+
+  &__inner-slick-prev {
+    right: 90px;
+  }
+
+  &__inner .slick-dots {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+  }
+
+  &__inner .slick-dots li:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  &__inner .slick-dots button {
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    border-radius: 50%;
+    border: 1px solid $silver-600;
+    background-color: $white;
+    cursor: pointer;
+    @extend %dots-interactivity;
+  }
+
+  &__inner .slick-dots .slick-active button {
+    background-color: $green-900;
+    border: none;
+  }
+
+  @media (max-width: 1200px) {}
+
+  @media (max-width: 992px) {}
+
+  @media (max-width: 768px) {}
+
+  @media (max-width: 576px) {}
+
+  @media (max-width: 375px) {}
+
+}

@@ -30,11 +30,33 @@
 
       <h2 class="product__title product__title--second title">Питахайя красная с белой мякотью</h2>
 
+      <!-- <div class="product__popup product__popup--active">
+        <button class="product__close-btn close-btn" type="button">
+          <svg class="close-btn__icon" width="24" height="24">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div> -->
+      
       <div class="product__images">
+        
+        <div class="product__images-item">
+          <a class="product__images-link" href="#">
+            <img class="product__image" src="images/product/1.jpg" alt="Фото продукта">
+          </a>
+        </div>
 
-        <img class="product__image" src="images/product/1.jpg" alt="Фото продукта">
-        <img class="product__image" src="images/product/1.jpg" alt="Фото продукта">
-        <img class="product__image" src="images/product/1.jpg" alt="Фото продукта">
+        <div class="product__images-item">
+          <a class="product__images-link" href="#">
+            <img class="product__image" src="images/product/1.jpg" alt="Фото продукта">
+          </a>
+        </div>
+
+        <div class="product__images-item">
+          <a class="product__images-link" href="#">
+            <img class="product__image" src="images/product/1.jpg" alt="Фото продукта">
+          </a>
+        </div>
 
       </div>
 
@@ -55,17 +77,17 @@
             </span>
           </div>
 
-          <div class="product__rating">
-            <span class="rating__star" data-rateyo-rating="4.5"></span>
+          <div class="product__rating rating">
+            <span class="rating__star" data-rateyo-rating="4"></span>
           </div>
 
-          <span class="product__avail-сhecker avail-сhecker">
+          <span class="product__avail-сhecker avail-сhecker avail-сhecker--big">
             в наличии
           </span>
 
         </div>
 
-        <div class="product__prices prices prices--line">
+        <div class="product__prices prices prices--product">
           <span class="prices__item prices__item--old">
             199
             <span class="currency">₴</span>
@@ -78,9 +100,9 @@
 
         <div class="product__line-2">
 
-          <div class="counter">
+          <div class="counter counter--big">
             <button class="counter__btn counter__btn--minus" type="button" name="counter__btn-minus">
-              <svg class="counter__btn-icon" width="24" height="24">
+              <svg class="counter__btn-icon" width="30" height="30">
                 <use xlink:href="images/sprite.svg#icon-minus"></use>
               </svg>
             </button>
@@ -89,19 +111,19 @@
               <input class="counter__value" type="text" name="number" value="1">
             </label>
             <button class="counter__btn counter__btn--plus" type="button" name="counter__btn-plus">
-              <svg class="counter__btn-icon" width="24" height="24">
+              <svg class="counter__btn-icon" width="30" height="30">
                 <use xlink:href="images/sprite.svg#icon-plus"></use>
               </svg>
             </button>
           </div>
 
-          <button class="product__button" type="button">
+          <button class="product__button btn" type="button">
             Добавить в корзину
           </button>
 
           <button class="product__fav-btn fav-btn" type="button">
             <span class="sr-only">Добавить в избранное</span>
-            <svg class="fav-btn__icon" width="32" height="32">
+            <svg class="fav-btn__icon" width="44" height="38">
               <use xlink:href="images/sprite.svg#icon-heart"></use>
             </svg>
           </button>
@@ -240,7 +262,7 @@
               </div>
 
               <div class="user__rating">
-                <span class="user__rating-star" data-rateyo-rating="4.5"></span>
+                <span class="user__rating-star" data-rateyo-rating="4"></span>
               </div>
 
             </div>
@@ -305,14 +327,15 @@
           </div>
 
           <label class="product__form-caption product__form-caption--checkbox">
-            <input class="product__checkbox" type="checkbox">
+            <input class="product__checkbox-input" type="checkbox">
+            <span class="product__checkbox" role="checkbox" aria-checked="false" tabindex="0"></span>
             Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих
             комментариев.
           </label>
 
 
 
-          <button class="product__form-btn" type="submit">Оставить отзыв</button>
+          <button class="product__form-btn btn" type="submit">Оставить отзыв</button>
         </form>
 
       </div>
